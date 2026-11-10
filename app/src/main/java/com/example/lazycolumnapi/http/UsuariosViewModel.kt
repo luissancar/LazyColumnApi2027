@@ -33,6 +33,7 @@ class UsuariosViewModel: ViewModel(){
             catch (e: Exception){
                 _error.value="No se ha podido cargar los usuarios"
             }
+            finally
             {
                 _cargando.value=false
             }

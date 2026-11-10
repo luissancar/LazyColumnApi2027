@@ -4,6 +4,15 @@ plugins {
 }
 
 android {
+
+    packaging {
+        resources {
+            excludes += "META-INF/INDEX.LIST"
+            excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/io.netty.versions.properties"
+        }
+    }
+
     namespace = "com.example.lazycolumnapi"
     compileSdk {
         version = release(37)
